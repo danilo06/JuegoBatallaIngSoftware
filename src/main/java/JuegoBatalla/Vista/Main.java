@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 /**
  * Declaracion de la clase Main, Clase principal del sistema
- * @author Danilo Beleño, Sebastian Suarez, Jose Buitrago, Andres Barragan
+ * @author Danilo Beleño, Sonia Mancipe, Jose Buitrago
  * @version 15/11/2018
  */
 public class Main extends Application {
@@ -17,7 +17,7 @@ public class Main extends Application {
 	 */
 	@Override
 	public void start(Stage PrimaryStage) throws Exception {
-	    Parent root = FXMLLoader.load(getClass().getResource("/view.fxml"));
+	    Parent root = FXMLLoader.load(getClass().getResource("/Vista.fxml"));
 	    Scene scene = new Scene(root);
 	    PrimaryStage.setScene(scene);
 	    PrimaryStage.initStyle(StageStyle.UNDECORATED); // para eliminar bordes del sistema
