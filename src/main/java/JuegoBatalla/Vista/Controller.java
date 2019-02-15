@@ -9,57 +9,64 @@ import javafx.scene.layout.AnchorPane;
 public class Controller {
 
     @FXML
-    private AnchorPane panelInicio;
+    private AnchorPane Panel1ComenzarBatalla;
 
     @FXML
-    private Button panel1btnIniciarPartida;
+    private AnchorPane Panel2GnerarTropas;
 
     @FXML
-    private AnchorPane panelGnerarTropas;
+    private Button Panel2BtnGenerarTropas;
 
     @FXML
-    private Button panel2btnGenerarTropas;
+    private AnchorPane Panel3Batalla;
 
     @FXML
-    private AnchorPane panel3Partida;
+    private Button Panel3BtnAtacarEquipoRojo;
 
     @FXML
-    private Button panel3btnAtacarEquipoRojo;
+    private Button Panel3BtnAtacarEquipoAzul;
 
     @FXML
-    private Button panel3btnAtacarEquipoAzul;
+    private ImageView Panel3ImgEquipoAzul;
 
     @FXML
-    private ImageView panel3imgEquipoRojoPartida;
+    private ImageView Panel3ImgEquipoRojo;
 
     @FXML
-    private ImageView panel3imgEquipoAzulPartida;
+    private AnchorPane Panel4NuevaPartida;
 
     @FXML
-    private Button panel4btnNuevaPartida;
+    private Button Panel4BtnNuevaPartida;
 
     @FXML
-    void panel1btnGenerarTropasAction(ActionEvent event) {
+    private ImageView Panel4ImgYouWin;
+
+    @FXML
+    private Button Panel1BtnComenzarBatalla;
+
+    @FXML
+    void Panel1BtnComenzarBatallaAction(ActionEvent event) {
+    	
 
     }
 
     @FXML
-    void panel1btnIniciarPartidaAction(ActionEvent event) {
+    void Panel2BtnGenerarTropasAction(ActionEvent event) {
 
     }
 
     @FXML
-    void panel3btnAtacarEquipoAzulAction(ActionEvent event) {
+    void Panel3BtnAtacarEquipoAzulAction(ActionEvent event) {
 
     }
 
     @FXML
-    void panel3btnAtacarEquipoRojoAction(ActionEvent event) {
+    void Panel3BtnAtacarEquipoRojoAction(ActionEvent event) {
 
     }
 
     @FXML
-    void panel4btnNuevaPartidaAction(ActionEvent event) {
+    void Panel4BtnNuevaPartidaAction(ActionEvent event) {
 
     }
 
