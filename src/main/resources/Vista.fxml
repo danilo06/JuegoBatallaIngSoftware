@@ -72,12 +72,12 @@
       </AnchorPane>
       <AnchorPane fx:id="Panel3Batalla" layoutX="2761.0" layoutY="2.0" prefHeight="768.0" prefWidth="1366.0">
          <children>
-            <ImageView fitHeight="768.0" fitWidth="1366.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="768.0" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@FOR_HONOR_game_video_1fhonor_action_artwork_battle_fantasy_fighting_knight_medieval_samurai_ubisoft_viking_warrior_1920x1080.jpg" />
                </image>
                <effect>
-                  <Bloom threshold="0.35" />
+                  <Bloom threshold="0.5" />
                </effect>
             </ImageView>
             <ImageView fx:id="Panel3ImgEquipoAzul" fitHeight="406.0" fitWidth="465.0" layoutX="127.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
