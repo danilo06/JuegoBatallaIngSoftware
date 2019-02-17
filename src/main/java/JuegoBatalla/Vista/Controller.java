@@ -7,8 +7,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class Controller implements Initializable{
 
@@ -47,7 +48,11 @@ public class Controller implements Initializable{
 
     @FXML
     private Button Panel1BtnComenzarBatalla;
-
+    
+    @FXML
+    private Image image1;
+    
+    
     @FXML
     void Panel1BtnComenzarBatallaAction(ActionEvent event) {
     	Panel2GnerarTropas.setLayoutX(0);
@@ -62,7 +67,9 @@ public class Controller implements Initializable{
 
     @FXML
     void Panel3BtnAtacarEquipoAzulAction(ActionEvent event) {
-    	Panel4NuevaPartida.setLayoutX(0);
+    	image1 = new Image("1c.gif");
+    	Panel3ImgEquipoAzul.setImage(image1);
+    	
     }
 
     @FXML
@@ -79,7 +86,7 @@ public class Controller implements Initializable{
     }
 
 	public void initialize(URL arg0, ResourceBundle arg1) {
-
+		
 	}
 
 }
