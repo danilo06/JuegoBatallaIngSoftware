@@ -96,6 +96,7 @@ public class Controller implements Initializable{
 
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		batalla = new Batalla();
+		/*
 		String aux = batalla.getEjercito1().getUnidades().get(0).getTipo();
 		String aux2 = batalla.getEjercito2().getUnidades().get(0).getTipo();
 		switch (aux) {
@@ -120,7 +121,7 @@ public class Controller implements Initializable{
 			imagenBueno = new Image("4malo.gif");
 			break;
 	}
-		
+		*/
 		Panel3ImgEquipoAzul.setImage(imagenBueno);
     	Panel3ImgEquipoRojo.setImage(imagenMalo);
 		
