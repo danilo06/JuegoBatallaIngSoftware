@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -22,6 +23,9 @@ public class Controller implements Initializable{
 
     @FXML
     private Button Panel2BtnGenerarTropas;
+    
+    @FXML
+    private Button Panel2BtnComenzar;
 
     @FXML
     private AnchorPane Panel3Batalla;
@@ -58,6 +62,18 @@ public class Controller implements Initializable{
     
     private Batalla batalla;
     
+    @FXML
+    private ProgressBar BarraVidaTeamAzul;
+
+    @FXML
+    private ProgressBar BarraVidaJugadorAzul;
+
+    @FXML
+    private ProgressBar BarraVidaTeamRojo;
+
+    @FXML
+    private ProgressBar BarraVidaJugadorRojo;
+    
     
     @FXML
     void Panel1BtnComenzarBatallaAction(ActionEvent event) {
@@ -70,6 +86,12 @@ public class Controller implements Initializable{
     void Panel2BtnGenerarTropasAction(ActionEvent event) {
     	Panel3Batalla.setLayoutX(0);
     }
+    
+    @FXML
+    void Panel2BtnComenzarAction(ActionEvent event) {
+
+    }
+
 
     @FXML
     void Panel3BtnAtacarEquipoAzulAction(ActionEvent event) {
