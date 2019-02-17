@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.effect.Bloom?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.Light.Distant?>
@@ -53,7 +54,25 @@
                   <Image url="@2fondo.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="Panel2BtnGenerarTropas" layoutX="462.0" layoutY="335.0" mnemonicParsing="false" onAction="#Panel2BtnGenerarTropasAction" text="GENERAR TROPAS">
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@4rol.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@3rol.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@2rol.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@1rol.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="Panel2BtnGenerarTropas" layoutX="776.0" layoutY="467.0" mnemonicParsing="false" onAction="#Panel2BtnGenerarTropasAction" text="GENERAR TROPAS">
                <effect>
                   <Lighting>
                      <bumpInput>
@@ -68,6 +87,45 @@
                   <Font name="Book Antiqua" size="47.0" />
                </font>
             </Button>
+            <Button fx:id="Panel2BtnComenzar" layoutX="861.0" layoutY="611.0" mnemonicParsing="false" onAction="#Panel2BtnComenzarAction" text="COMENZAR">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#8d3d3d" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="Book Antiqua" size="47.0" />
+               </font>
+            </Button>
+            <Label layoutX="205.0" layoutY="10.0" prefHeight="102.0" prefWidth="261.0" text="Equipo Azul" textFill="#5141d1">
+               <font>
+                  <Font name="Book Antiqua" size="44.0" />
+               </font>
+               <effect>
+                  <Bloom>
+                     <input>
+                        <Glow />
+                     </input>
+                  </Bloom>
+               </effect>
+            </Label>
+            <Label layoutX="480.0" layoutY="19.0" prefHeight="84.0" prefWidth="369.0" text="Equipo Rojo" textFill="#d34141">
+               <font>
+                  <Font name="Book Antiqua" size="44.0" />
+               </font>
+               <effect>
+                  <Bloom>
+                     <input>
+                        <Glow />
+                     </input>
+                  </Bloom>
+               </effect>
+            </Label>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="Panel3Batalla" layoutX="2761.0" layoutY="2.0" prefHeight="768.0" prefWidth="1366.0">
@@ -118,6 +176,10 @@
                <font>
                   <Font name="Book Antiqua" size="35.0" />
                </font></Button>
+            <ProgressBar fx:id="BarraVidaTeamAzul" layoutX="31.0" layoutY="29.0" prefHeight="42.0" prefWidth="386.0" progress="1.0" />
+            <ProgressBar fx:id="BarraVidaJugadorAzul" layoutX="31.0" layoutY="101.0" prefHeight="18.0" prefWidth="277.0" progress="1.0" />
+            <ProgressBar fx:id="BarraVidaTeamRojo" layoutX="940.0" layoutY="29.0" prefHeight="42.0" prefWidth="386.0" progress="1.0" />
+            <ProgressBar fx:id="BarraVidaJugadorRojo" layoutX="1049.0" layoutY="101.0" prefHeight="18.0" prefWidth="277.0" progress="1.0" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="Panel4NuevaPartida" layoutX="4137.0" layoutY="1.0" prefHeight="768.0" prefWidth="1366.0">
@@ -147,5 +209,6 @@
                </font></Button>
          </children>
       </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
