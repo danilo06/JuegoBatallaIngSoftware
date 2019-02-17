@@ -69,10 +69,12 @@ public class Controller implements Initializable{
 
     @FXML
     void Panel3BtnAtacarEquipoAzulAction(ActionEvent event) {
+    	/*
     	imagenBueno = new Image("2bueno.gif");
     	imagenMalo = new Image("2malo.gif");
     	Panel3ImgEquipoAzul.setImage(imagenBueno);
     	Panel3ImgEquipoRojo.setImage(imagenMalo);
+    	*/
     }
 
     @FXML

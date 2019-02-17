@@ -33,4 +33,13 @@ public class Heroe extends Tropa {
         // TODO implement here
     }
 
+	public Integer getDañoAdicional() {
+		return dañoAdicional;
+	}
+
+	public Integer getDañoRecibido() {
+		return dañoRecibido;
+	}
+    
+
 }

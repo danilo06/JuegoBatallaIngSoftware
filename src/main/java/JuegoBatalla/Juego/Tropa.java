@@ -21,6 +21,11 @@ public class Tropa {
      * 
      */
     protected Integer resistencia;
+    
+    /**
+     * 
+     */
+    protected String tipo;
 
 
     /**
@@ -36,5 +41,20 @@ public class Tropa {
     public void atacar() {
         // TODO implement here
     }
+
+	public Integer getDaño() {
+		return daño;
+	}
+
+	public Integer getResistencia() {
+		return resistencia;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+	
+    
+    
 
 }
