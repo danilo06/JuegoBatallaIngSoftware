@@ -20,7 +20,7 @@ public class Main extends Application {
 	    Parent root = FXMLLoader.load(getClass().getResource("/Vista.fxml"));
 	    Scene scene = new Scene(root);
 	    PrimaryStage.setScene(scene);
-	    PrimaryStage.initStyle(StageStyle.UNDECORATED); // para eliminar bordes del sistema
+	    //PrimaryStage.initStyle(StageStyle.UNDECORATED); // para eliminar bordes del sistema
 	    //PrimaryStage.setFullScreen(true);
 	    PrimaryStage.show();
 	}

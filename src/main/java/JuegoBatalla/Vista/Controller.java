@@ -46,13 +46,14 @@ public class Controller {
 
     @FXML
     void Panel1BtnComenzarBatallaAction(ActionEvent event) {
+    	Panel2GnerarTropas.setLayoutX(0);
     	
-
+ 
     }
 
     @FXML
     void Panel2BtnGenerarTropasAction(ActionEvent event) {
-
+    	Panel3Batalla.setLayoutX(0);
     }
 
     @FXML
