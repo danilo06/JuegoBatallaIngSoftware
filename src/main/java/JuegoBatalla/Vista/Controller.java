@@ -50,8 +50,9 @@ public class Controller implements Initializable{
     private Button Panel1BtnComenzarBatalla;
     
     @FXML
-    private Image image1;
-    
+    private Image imagenBueno;
+    private Image imagenMalo;
+    private int aux=1;
     
     @FXML
     void Panel1BtnComenzarBatallaAction(ActionEvent event) {
@@ -67,8 +68,22 @@ public class Controller implements Initializable{
 
     @FXML
     void Panel3BtnAtacarEquipoAzulAction(ActionEvent event) {
-    	image1 = new Image("1c.gif");
-    	Panel3ImgEquipoAzul.setImage(image1);
+    	imagenBueno = new Image("1bueno.gif");
+    	if(aux==2) {
+    		imagenBueno = new Image("2bueno.gif");
+    		imagenMalo = new Image("2malo.gif");
+    	}
+    	if(aux==3) {
+    		imagenBueno = new Image("3bueno.gif");
+    		imagenMalo = new Image("3malo.gif");
+    	}
+    	if(aux==4) {
+    		imagenBueno = new Image("4bueno.gif");
+    		imagenMalo = new Image("4malo.gif");
+    	}
+    	aux++;
+    	Panel3ImgEquipoAzul.setImage(imagenBueno);
+    	Panel3ImgEquipoRojo.setImage(imagenMalo);
     	
     }
 
