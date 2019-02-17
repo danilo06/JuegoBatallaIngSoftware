@@ -101,8 +101,8 @@ public class Controller implements Initializable{
     	if (BarraVidaTeamRojo.getProgress()>0.03) {
     		BarraVidaTeamRojo.setProgress(BarraVidaTeamRojo.getProgress()-0.07);
         	BarraVidaJugadorRojo.setProgress(BarraVidaJugadorRojo.getProgress()-0.14);
-        	Panel3BtnAtacarEquipoAzul.setDisable(false);
-			Panel3BtnAtacarEquipoRojo.setDisable(true);
+        	Panel3BtnAtacarEquipoAzul.setDisable(true);
+			Panel3BtnAtacarEquipoRojo.setDisable(false);
     	}else {
     		Panel4NuevaPartida.setLayoutX(0);
     	}
@@ -113,8 +113,8 @@ public class Controller implements Initializable{
     	if (BarraVidaTeamAzul.getProgress()>0.03) {
     		BarraVidaTeamAzul.setProgress(BarraVidaTeamAzul.getProgress()-0.07);
         	BarraVidaJugadorAzul.setProgress(BarraVidaJugadorAzul.getProgress()-0.14);
-        	Panel3BtnAtacarEquipoAzul.setDisable(true);
-			Panel3BtnAtacarEquipoRojo.setDisable(false);
+        	Panel3BtnAtacarEquipoAzul.setDisable(false);
+			Panel3BtnAtacarEquipoRojo.setDisable(true);
     	}else
     	{
     		Panel4NuevaPartida.setLayoutX(0);
