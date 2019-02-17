@@ -84,12 +84,12 @@ public class Controller implements Initializable{
 
     @FXML
     void Panel2BtnGenerarTropasAction(ActionEvent event) {
-    	Panel3Batalla.setLayoutX(0);
+    	Panel2BtnComenzar.setDisable(false);
     }
     
     @FXML
     void Panel2BtnComenzarAction(ActionEvent event) {
-
+    	Panel3Batalla.setLayoutX(0);
     }
 
 
@@ -118,6 +118,7 @@ public class Controller implements Initializable{
 
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		batalla = new Batalla();
+		Panel2BtnComenzar.setDisable(true);
 		BarraVidaTeamAzul.setStyle("-fx-accent: green;");
 		BarraVidaJugadorAzul.setStyle("-fx-accent: green;");
 		BarraVidaTeamRojo.setStyle("-fx-accent: green;");
