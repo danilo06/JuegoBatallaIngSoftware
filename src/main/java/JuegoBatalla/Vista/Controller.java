@@ -84,12 +84,12 @@ public class Controller implements Initializable{
 
     @FXML
     void Panel2BtnGenerarTropasAction(ActionEvent event) {
-    	Panel3Batalla.setLayoutX(0);
+    	Panel2BtnComenzar.setDisable(false);
     }
     
     @FXML
     void Panel2BtnComenzarAction(ActionEvent event) {
-
+    	Panel3Batalla.setLayoutX(0);
     }
 
 
@@ -105,7 +105,7 @@ public class Controller implements Initializable{
 
     @FXML
     void Panel3BtnAtacarEquipoRojoAction(ActionEvent event) {
-    	//pbRed.setStyle("-fx-accent: red;"); 
+   
     }
 
     @FXML
@@ -118,7 +118,11 @@ public class Controller implements Initializable{
 
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		batalla = new Batalla();
-		
+		Panel2BtnComenzar.setDisable(true);
+		BarraVidaTeamAzul.setStyle("-fx-accent: green;");
+		BarraVidaJugadorAzul.setStyle("-fx-accent: green;");
+		BarraVidaTeamRojo.setStyle("-fx-accent: green;");
+		BarraVidaJugadorRojo.setStyle("-fx-accent: green;");
 		String aux = batalla.getEjercito1().getUnidades().get(0).getTipo();
 		String aux2 = batalla.getEjercito2().getUnidades().get(0).getTipo();
 		switch (aux) {
@@ -142,8 +146,7 @@ public class Controller implements Initializable{
 		case "Lancero":
 			imagenMalo = new Image("4malo.gif");
 			break;
-	}
-		
+	}	
 		Panel3ImgEquipoAzul.setImage(imagenBueno);
     	Panel3ImgEquipoRojo.setImage(imagenMalo);
 		
