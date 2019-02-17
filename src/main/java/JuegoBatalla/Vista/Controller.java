@@ -79,7 +79,7 @@ public class Controller implements Initializable{
 
     @FXML
     void Panel3BtnAtacarEquipoRojoAction(ActionEvent event) {
-
+    	//pbRed.setStyle("-fx-accent: red;"); 
     }
 
     @FXML
