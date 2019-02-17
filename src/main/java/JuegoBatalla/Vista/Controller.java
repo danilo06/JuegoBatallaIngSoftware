@@ -55,6 +55,7 @@ public class Controller implements Initializable{
     @FXML
     private Image imagenMalo;
     
+    
     @FXML
     void Panel1BtnComenzarBatallaAction(ActionEvent event) {
     	Panel2GnerarTropas.setLayoutX(0);

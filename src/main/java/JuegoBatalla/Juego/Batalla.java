@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * 
  */
-public class Controlador {
+public class Batalla {
 	
 	//private Ejercito ejercito1;
 	
@@ -19,7 +19,7 @@ public class Controlador {
     /**
      * Default constructor
      */
-    public Controlador() {
+    public Batalla() {
     	generarEjercitos();
     }
 
