@@ -9,7 +9,11 @@ public class Controlador {
 	//private Ejercito ejercito1;
 	
 	public static void main(String[] args) {
-	System.out.println("Controlador");
+		System.out.println("Controlador");
+		for (int i=0;i<10;i++) {
+			int aux=getPrimerAtacante();
+			System.out.println(aux);
+		}
 	}
 
     /**
@@ -22,24 +26,30 @@ public class Controlador {
     /**
      * 
      */
-    private Ejercito ejercito1;
+    private Ejercito ejercitoAzul;
 
     /**
      * 
      */
-    private Ejercito ejercito2;
+    private Ejercito ejercitoRojo;
     
     public void generarEjercitos() {
-    	ejercito1 = new Ejercito();
-    	ejercito2 = new Ejercito();
+    	ejercitoAzul = new Ejercito();
+    	ejercitoRojo = new Ejercito();
     }
 
 	public Ejercito getEjercito1() {
-		return ejercito1;
+		return ejercitoAzul;
 	}
 
 	public Ejercito getEjercito2() {
-		return ejercito2;
+		return ejercitoRojo;
+	}
+	
+	public static int getPrimerAtacante() {
+		int aux=0;
+		aux= (int) (Math.random() * 2) + 1;
+		return aux;
 	}
     
     

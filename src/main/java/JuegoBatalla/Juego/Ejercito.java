@@ -24,6 +24,7 @@ public class Ejercito {
     private Heroe heroe;
     
     private int cantUnidades;
+    private int vidaTotal;
 
     /**
      * 
@@ -33,6 +34,7 @@ public class Ejercito {
         unidades = new ArrayList<Tropa>();
         generarTropas(cantUnidades);
         this.heroe = new Heroe();
+        calcularVidaTotal();
         cantUnidades++;
     }
     private void generarTropas(int cantidad) {
@@ -41,16 +43,13 @@ public class Ejercito {
     		Tropa tropa = null;
     		int aux=tipoTropa();
     		if (aux==1) {
-    			System.out.println("Caballero");
     			tropa = new Caballero();
     		}
     		if (aux==2) {
-    			System.out.println("Infanteria");
     			tropa = new Infanteria();
     		}
     		if (aux==3) {
     			tropa = new Lancero();
-    			System.out.println("Lancero");
     		}
 			unidades.add(tropa);
     	}
@@ -79,6 +78,9 @@ public class Ejercito {
 	public int getCantUnidades() {
 		return cantUnidades;
 	}
+	public int getVidaTotal() {
+		return vidaTotal;
+	}
 	
 	public int getCantTipoUnidad(String tipoUnidad) {
 		int aux=0;
@@ -89,4 +91,11 @@ public class Ejercito {
 		}
 		return aux;
 	}
+	public void calcularVidaTotal() {
+		vidaTotal=0;
+		for(int i=0;i<cantUnidades-1;i++) {
+			vidaTotal+=unidades.get(1).getResistencia();
+		}
+	}
+	
 }
