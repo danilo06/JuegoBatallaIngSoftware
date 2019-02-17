@@ -33,6 +33,14 @@ public class Controlador {
     	ejercito1 = new Ejercito();
     	ejercito2 = new Ejercito();
     }
+
+	public Ejercito getEjercito1() {
+		return ejercito1;
+	}
+
+	public Ejercito getEjercito2() {
+		return ejercito2;
+	}
     
     
 }

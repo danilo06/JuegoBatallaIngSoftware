@@ -79,5 +79,14 @@ public class Ejercito {
 	public int getCantUnidades() {
 		return cantUnidades;
 	}
-    
+	
+	public int getCantTipoUnidad(String tipoUnidad) {
+		int aux=0;
+		for (int i=0;i<unidades.size();i++) {
+			if (tipoUnidad == unidades.get(i).getTipo()) {
+				aux++;
+			}
+		}
+		return aux;
+	}
 }
