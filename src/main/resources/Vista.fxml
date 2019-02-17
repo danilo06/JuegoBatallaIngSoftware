@@ -87,7 +87,7 @@
             </ImageView>
             <ImageView fx:id="Panel3ImgEquipoRojo" fitHeight="353.0" fitWidth="332.0" layoutX="1009.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@4malo.gif" />
+                  <Image url="@1malo.gif" />
                </image>
             </ImageView>
             <Button fx:id="Panel3BtnAtacarEquipoRojo" layoutX="1009.0" layoutY="517.0" mnemonicParsing="false" onAction="#Panel3BtnAtacarEquipoRojoAction" text="ATACAR">
