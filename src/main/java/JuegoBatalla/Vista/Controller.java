@@ -3,6 +3,7 @@ package JuegoBatalla.Vista;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import JuegoBatalla.Juego.Batalla;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -55,6 +56,8 @@ public class Controller implements Initializable{
     @FXML
     private Image imagenMalo;
     
+    private Batalla batalla;
+    
     
     @FXML
     void Panel1BtnComenzarBatallaAction(ActionEvent event) {
@@ -92,6 +95,36 @@ public class Controller implements Initializable{
     }
 
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		batalla = new Batalla();
+		String aux = batalla.getEjercito1().getUnidades().get(0).getTipo();
+		String aux2 = batalla.getEjercito2().getUnidades().get(0).getTipo();
+		switch (aux) {
+			case "Caballero":
+				imagenBueno = new Image("2bueno.gif");
+				break;
+			case "Infanteria":
+				imagenBueno = new Image("3bueno.gif");
+				break;
+			case "Lancero":
+				imagenBueno = new Image("4bueno.gif");
+				break;
+		}
+		switch (aux2) {
+		case "Caballero":
+			imagenBueno = new Image("2malo.gif");
+			break;
+		case "Infanteria":
+			imagenBueno = new Image("3malo.gif");
+			break;
+		case "Lancero":
+			imagenBueno = new Image("4malo.gif");
+			break;
+	}
+		
+		Panel3ImgEquipoAzul.setImage(imagenBueno);
+    	Panel3ImgEquipoRojo.setImage(imagenMalo);
+		
+
 		
 	}
 
