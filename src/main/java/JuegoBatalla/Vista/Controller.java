@@ -72,12 +72,13 @@ public class Controller implements Initializable{
 
     @FXML
     void Panel4BtnNuevaPartidaAction(ActionEvent event) {
-    	Panel1ComenzarBatalla.setLayoutX(0);
+    	
     }
 
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		
-		
+		Panel2GnerarTropas.setLayoutX(1000);
+		Panel3Batalla.setLayoutX(1000);
+		Panel4NuevaPartida.setLayoutX(1000);
 	}
 
 }
