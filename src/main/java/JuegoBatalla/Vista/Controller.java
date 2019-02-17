@@ -95,17 +95,14 @@ public class Controller implements Initializable{
 
     @FXML
     void Panel3BtnAtacarEquipoAzulAction(ActionEvent event) {
-    	/*
-    	imagenBueno = new Image("2bueno.gif");
-    	imagenMalo = new Image("2malo.gif");
-    	Panel3ImgEquipoAzul.setImage(imagenBueno);
-    	Panel3ImgEquipoRojo.setImage(imagenMalo);
-    	*/
+    	BarraVidaTeamRojo.setProgress(BarraVidaTeamRojo.getProgress()-0.07);
+    	BarraVidaJugadorRojo.setProgress(BarraVidaJugadorRojo.getProgress()-0.14);
     }
 
     @FXML
     void Panel3BtnAtacarEquipoRojoAction(ActionEvent event) {
-   
+    	BarraVidaTeamAzul.setProgress(BarraVidaTeamAzul.getProgress()-0.07);
+    	BarraVidaJugadorAzul.setProgress(BarraVidaJugadorAzul.getProgress()-0.14);
     }
 
     @FXML
