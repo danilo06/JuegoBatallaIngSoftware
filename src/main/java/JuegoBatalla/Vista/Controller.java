@@ -127,6 +127,12 @@ public class Controller implements Initializable{
     	Panel2GnerarTropas.setLayoutX(1700);
 		Panel3Batalla.setLayoutX(1700);
 		Panel4NuevaPartida.setLayoutX(1700);
+		BarraVidaTeamAzul.setProgress(1);
+    	BarraVidaJugadorAzul.setProgress(1);
+    	BarraVidaTeamRojo.setProgress(1);
+    	BarraVidaJugadorRojo.setProgress(1);
+    	
+		
     	
     }
 
