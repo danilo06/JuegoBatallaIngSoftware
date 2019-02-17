@@ -69,6 +69,7 @@ public class Controller implements Initializable{
     @FXML
     void Panel3BtnAtacarEquipoAzulAction(ActionEvent event) {
     	imagenBueno = new Image("1bueno.gif");
+    	imagenMalo = new Image("2malo.gif");
     	if(aux==2) {
     		imagenBueno = new Image("2bueno.gif");
     		imagenMalo = new Image("2malo.gif");
