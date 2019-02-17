@@ -85,17 +85,20 @@ public class Controller implements Initializable{
     @FXML
     void Panel2BtnGenerarTropasAction(ActionEvent event) {
     	Panel2BtnComenzar.setDisable(false);
+    	batalla.generarEjercitos();
     }
     
     @FXML
     void Panel2BtnComenzarAction(ActionEvent event) {
     	Panel3Batalla.setLayoutX(0);
+    	Panel2BtnComenzar.setDisable(true);
+    	
     }
 
 
     @FXML
     void Panel3BtnAtacarEquipoAzulAction(ActionEvent event) {
-    	if (BarraVidaTeamRojo.getProgress()<0.03) {
+    	if (BarraVidaTeamRojo.getProgress()>0.03) {
     		BarraVidaTeamRojo.setProgress(BarraVidaTeamRojo.getProgress()-0.07);
         	BarraVidaJugadorRojo.setProgress(BarraVidaJugadorRojo.getProgress()-0.14);
     	}else {
@@ -105,7 +108,7 @@ public class Controller implements Initializable{
 
     @FXML
     void Panel3BtnAtacarEquipoRojoAction(ActionEvent event) {
-    	if (BarraVidaTeamAzul.getProgress()<0.03) {
+    	if (BarraVidaTeamAzul.getProgress()>0.03) {
     		BarraVidaTeamAzul.setProgress(BarraVidaTeamAzul.getProgress()-0.07);
         	BarraVidaJugadorAzul.setProgress(BarraVidaJugadorAzul.getProgress()-0.14);
     	}else
