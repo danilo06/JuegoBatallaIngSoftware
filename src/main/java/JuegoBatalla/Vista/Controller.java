@@ -58,7 +58,7 @@ public class Controller {
 
     @FXML
     void Panel3BtnAtacarEquipoAzulAction(ActionEvent event) {
-
+    	Panel4NuevaPartida.setLayoutX(0);
     }
 
     @FXML
