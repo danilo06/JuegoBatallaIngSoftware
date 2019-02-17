@@ -1,12 +1,16 @@
 package JuegoBatalla.Vista;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
-public class Controller {
+public class Controller implements Initializable{
 
     @FXML
     private AnchorPane Panel1ComenzarBatalla;
@@ -70,5 +74,10 @@ public class Controller {
     void Panel4BtnNuevaPartidaAction(ActionEvent event) {
 
     }
+
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

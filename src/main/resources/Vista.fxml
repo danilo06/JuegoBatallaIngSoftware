@@ -19,6 +19,33 @@
             <Image url="@FOR_HONOR_game_video_1fhonor_action_artwork_battle_fantasy_fighting_knight_medieval_samurai_ubisoft_viking_warrior_7680x4320.jpg" />
          </image>
       </ImageView>
+      <Button fx:id="Panel1BtnComenzarBatalla" layoutX="28.0" layoutY="478.0" mnemonicParsing="false" onAction="#Panel1BtnComenzarBatallaAction" prefHeight="130.0" prefWidth="543.0" text="COMENZAR BATALLA">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#8d3d3d" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Book Antiqua" size="43.0" />
+         </font>
+      </Button>
+      <Label fx:id="Panel1TxtComenzarBatalla" layoutX="16.0" layoutY="232.0" prefHeight="130.0" prefWidth="581.0" text="The Art of War" textFill="#d34141">
+         <font>
+            <Font name="Book Antiqua" size="86.0" />
+         </font>
+         <effect>
+            <Bloom>
+               <input>
+                  <Glow />
+               </input>
+            </Bloom>
+         </effect>
+      </Label>
       <AnchorPane fx:id="Panel2GnerarTropas" layoutX="1382.0" prefHeight="768.0" prefWidth="1366.0">
          <children>
             <ImageView fitHeight="768.0" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true">
@@ -26,25 +53,21 @@
                   <Image url="@FOR_HONOR_1fhono_raction_battle_fantasy_fighting_game_honor_knight_medieval_samurai_ubisoft_video_viking_warrior_3840x2160.jpg" />
                </image>
             </ImageView>
-            <AnchorPane layoutX="435.0" layoutY="384.0" prefHeight="200.0" prefWidth="200.0">
-               <children>
-                  <Button fx:id="Panel2BtnGenerarTropas" mnemonicParsing="false" onAction="#Panel2BtnGenerarTropasAction" text="GENERAR TROPAS">
-                     <effect>
-                        <Lighting>
-                           <bumpInput>
-                              <Shadow />
-                           </bumpInput>
-                           <light>
-                              <Light.Distant color="#8d3d3d" />
-                           </light>
-                        </Lighting>
-                     </effect>
-                     <font>
-                        <Font name="Book Antiqua" size="47.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
+            <Button fx:id="Panel2BtnGenerarTropas" layoutX="462.0" layoutY="335.0" mnemonicParsing="false" onAction="#Panel2BtnGenerarTropasAction" text="GENERAR TROPAS">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#8d3d3d" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="Book Antiqua" size="47.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="Panel3Batalla" layoutX="2761.0" layoutY="2.0" prefHeight="768.0" prefWidth="1366.0">
@@ -56,6 +79,16 @@
                <effect>
                   <Bloom threshold="0.35" />
                </effect>
+            </ImageView>
+            <ImageView fx:id="Panel3ImgEquipoAzul" fitHeight="406.0" fitWidth="465.0" layoutX="127.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@gifs-animados-caballeros-8325681.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Panel3ImgEquipoRojo" fitHeight="353.0" fitWidth="332.0" layoutX="954.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@3m.gif" />
+               </image>
             </ImageView>
             <Button fx:id="Panel3BtnAtacarEquipoRojo" layoutX="1009.0" layoutY="517.0" mnemonicParsing="false" onAction="#Panel3BtnAtacarEquipoRojoAction" text="ATACAR">
                <effect>
@@ -85,16 +118,6 @@
                <font>
                   <Font name="Book Antiqua" size="35.0" />
                </font></Button>
-            <ImageView fx:id="Panel3ImgEquipoAzul" fitHeight="406.0" fitWidth="465.0" layoutX="127.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@gifs-animados-caballeros-8325681.gif" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="Panel3ImgEquipoRojo" fitHeight="353.0" fitWidth="332.0" layoutX="954.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@3m.gif" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="Panel4NuevaPartida" layoutX="4137.0" layoutY="1.0" prefHeight="768.0" prefWidth="1366.0">
@@ -104,6 +127,10 @@
                   <Image url="@1.jpg" />
                </image>
             </ImageView>
+            <ImageView fx:id="Panel4ImgYouWin" fitHeight="369.0" fitWidth="499.0" layoutX="208.0" layoutY="130.0" pickOnBounds="true">
+               <image>
+                  <Image url="@giphy.gif" />
+               </image></ImageView>
             <Button fx:id="Panel4BtnNuevaPartida" layoutX="180.0" layoutY="521.0" mnemonicParsing="false" onAction="#Panel4BtnNuevaPartidaAction" prefHeight="150.0" prefWidth="543.0" text="NUEVA PARTIDA">
                <effect>
                   <Lighting>
@@ -118,39 +145,6 @@
                <font>
                   <Font name="Book Antiqua" size="52.0" />
                </font></Button>
-            <ImageView fx:id="Panel4ImgYouWin" fitHeight="369.0" fitWidth="499.0" layoutX="208.0" layoutY="130.0" pickOnBounds="true">
-               <image>
-                  <Image url="@giphy.gif" />
-               </image></ImageView>
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutX="4.0" layoutY="154.0" prefHeight="556.0" prefWidth="596.0">
-         <children>
-            <Button fx:id="Panel1BtnComenzarBatalla" layoutX="27.0" layoutY="334.0" mnemonicParsing="false" onAction="#Panel1BtnComenzarBatallaAction" prefHeight="130.0" prefWidth="543.0" text="COMENZAR BATALLA">
-               <effect>
-                  <Lighting>
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant color="#8d3d3d" />
-                     </light>
-                  </Lighting>
-               </effect>
-               <font>
-                  <Font name="Book Antiqua" size="43.0" />
-               </font></Button>
-            <Label layoutX="8.0" layoutY="14.0" prefHeight="130.0" prefWidth="581.0" text="The Art of War" textFill="#d34141">
-               <font>
-                  <Font name="Book Antiqua" size="86.0" />
-               </font>
-               <effect>
-                  <Bloom>
-                     <input>
-                        <Glow />
-                     </input>
-                  </Bloom>
-               </effect></Label>
          </children>
       </AnchorPane>
    </children>
