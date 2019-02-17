@@ -72,11 +72,11 @@ public class Controller implements Initializable{
 
     @FXML
     void Panel4BtnNuevaPartidaAction(ActionEvent event) {
-
+    	Panel1ComenzarBatalla.setLayoutX(0);
     }
 
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
