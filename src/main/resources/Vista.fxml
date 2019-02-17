@@ -35,7 +35,7 @@
             <Font name="Book Antiqua" size="43.0" />
          </font>
       </Button>
-      <Label fx:id="Panel1TxtComenzarBatalla" layoutX="16.0" layoutY="232.0" prefHeight="130.0" prefWidth="581.0" text="The Art of War" textFill="#d34141">
+      <Label fx:id="Panel1TxtComenzarBatallo" layoutX="16.0" layoutY="232.0" prefHeight="130.0" prefWidth="581.0" text="The Art of Waar" textFill="#d34141">
          <font>
             <Font name="Book Antiqua" size="86.0" />
          </font>
